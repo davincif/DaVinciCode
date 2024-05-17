@@ -1,9 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 
-import './globals.css'
+import { stdOrdinaryFont } from '@/app/globals.font'
 
-const inter = Inter({ subsets: ['latin'] })
+import './globals.sass'
 
 export const metadata: Metadata = {
   title: 'DaVinciCode',
@@ -16,8 +15,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className={
+        'bg-stdBgColor text-stdOrdinaryFontColor font-stdOrdinaryFontSize'
+      }
+    >
+      <body className={`${stdOrdinaryFont.className} mx-4`}>{children}</body>
     </html>
   )
 }

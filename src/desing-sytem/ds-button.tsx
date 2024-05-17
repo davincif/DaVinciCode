@@ -1,3 +1,4 @@
+import { stdOrdinaryFont } from '@/app/globals.font'
 import {
   DsButtonProps,
   emptyDsButtonProps,
@@ -8,5 +9,5 @@ export default function DsButton(props?: DsButtonProps) {
     props = emptyDsButtonProps()
   }
 
-  return <button>{props.children}</button>
+  return <button className={stdOrdinaryFont.className}>{props.children}</button>
 }

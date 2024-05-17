@@ -1,12 +1,11 @@
 import React from 'react'
 
-import DsButton from '@/desing-sytem/ds-button'
+import Navbar from '@/components/navbar'
 
 export default function Home() {
   return (
     <>
-      <p>naaaanananaraaaaana</p>
-      <DsButton>xablau</DsButton>
+      <Navbar />
     </>
   )
 }

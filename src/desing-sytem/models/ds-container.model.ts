@@ -3,11 +3,9 @@ import {
   emptyDsProps,
 } from '@/desing-sytem/models/ds-props.model'
 
-export interface DsButtonProps extends DsPropsModel {
-  nude?: boolean
-}
+export interface DsContainerProps extends DsPropsModel {}
 
-export function emptyDsButtonProps(): DsButtonProps {
+export function emptyDsContainerProps(): DsContainerProps {
   return {
     ...emptyDsProps(),
   }
