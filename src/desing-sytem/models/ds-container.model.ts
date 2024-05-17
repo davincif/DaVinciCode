@@ -1,12 +1,12 @@
 import {
-  DsPropsModel,
-  emptyDsProps,
-} from '@/desing-sytem/models/ds-props.model'
+  DsBaseModel,
+  emptyDsBaseProps,
+} from '@/desing-sytem/models/ds-base.model'
 
-export interface DsContainerProps extends DsPropsModel {}
+export interface DsContainerProps extends DsBaseModel {}
 
 export function emptyDsContainerProps(): DsContainerProps {
   return {
-    ...emptyDsProps(),
+    ...emptyDsBaseProps(),
   }
 }

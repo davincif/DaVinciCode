@@ -1,12 +1,8 @@
-import {
-  DsNarbarProps,
-  emptyDsNarbarProps,
-} from '@/desing-sytem/models/ds-navbar.model'
+'use strict'
 
-export default function DsNavbar(props?: DsNarbarProps) {
-  if (!props) {
-    props = emptyDsNarbarProps()
-  }
+import { emptyDsNarbarProps } from '@/desing-sytem/models/ds-navbar.model'
+
+export default function DsNavbar(props = emptyDsNarbarProps()) {
 
   return (
     <nav

@@ -1,14 +1,13 @@
-import {
-  DsPropsModel,
-  emptyDsProps,
-} from '@/desing-sytem/models/ds-props.model'
+import { DsBaseButtonProps, emptyDsBaseButtonProps } from '@/desing-sytem/models/ds-base-button.model'
 
-export interface DsButtonProps extends DsPropsModel {
+
+export interface DsButtonProps extends DsBaseButtonProps {
   nude?: boolean
 }
 
+
 export function emptyDsButtonProps(): DsButtonProps {
   return {
-    ...emptyDsProps(),
+    ...emptyDsBaseButtonProps(),
   }
 }

@@ -1,12 +1,7 @@
-import {
-  DsContainerProps,
-  emptyDsContainerProps,
-} from '@/desing-sytem/models/ds-container.model'
+'use strict'
 
-export default function DsContainer(props: DsContainerProps) {
-  if (!props) {
-    props = emptyDsContainerProps()
-  }
+import { emptyDsContainerProps } from '@/desing-sytem/models/ds-container.model'
 
+export default function DsContainer(props = emptyDsContainerProps()) {
   return <div className={'m-4'}>{props.children}</div>
 }
