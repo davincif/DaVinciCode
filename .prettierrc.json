@@ -1,0 +1,23 @@
+{
+  "trailingComma": "es5",
+  "useTabs": false,
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "bracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "importOrderSeparation": true,
+  "importOrder": [
+    "^@design-system/(.*)$",
+    "^@app/(.*)$",
+    "^@public/(.*)$",
+    "^@(.*)$",
+    "^[./]"
+  ]
+}
