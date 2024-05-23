@@ -1,8 +1,16 @@
-import { DsBaseModel, emptyDsBaseProps } from '@/desing-sytem/models/ds-base.model'
-import { MouseEventHandler } from 'react'
+import {
+  DsBaseModel,
+  emptyDsBaseProps,
+} from '@/desing-sytem/models/ds-base.model'
+import { ButtonHTMLAttributes, DetailedHTMLProps } from 'react'
 
-export interface DsBaseButtonProps extends DsBaseModel {
-  onClick?: MouseEventHandler<unknown>
+type ReactButtonType = DetailedHTMLProps<
+  ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
+>
+
+export interface DsBaseButtonProps extends DsBaseModel, ReactButtonType {
+  //   placeholder
 }
 
 export function emptyDsBaseButtonProps(): DsBaseButtonProps {

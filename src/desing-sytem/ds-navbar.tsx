@@ -3,7 +3,6 @@
 import { emptyDsNarbarProps } from '@/desing-sytem/models/ds-navbar.model'
 
 export default function DsNavbar(props = emptyDsNarbarProps()) {
-
   return (
     <nav
       className={`${props.className} ${
